@@ -10,7 +10,7 @@ class Soldier {
   }
 
   receiveDamage(damage) {
-    this.health = this.health - damage;
+    this.health -= damage;
   }
 }
 
@@ -48,4 +48,22 @@ class Saxon extends Soldier {
 }
 
 // War
-class War {}
+class War {
+  constructor() {
+    this.vikingArmy = [];
+    this.saxonArmy = [];
+  }
+
+  addViking(viking) {
+    this.vikingArmy.push(viking);
+  }
+  addSaxon(saxon) {
+    this.saxonArmy.push(saxon);
+  }
+
+  vikingAttack() {}
+
+  saxonAttack() {}
+
+  showStatus() {}
+}
