@@ -86,23 +86,20 @@ class War {
   // Iteration 5
   // a method to replace the vikingAttack() and saxonAttack() methods:
 
-  armyAttack(armyAttacking) {
-    const randomSaxon =
-      this.saxonArmy[Math.floor(Math.random() * this.saxonArmy.length)];
-    const randomViking =
-      this.vikingArmy[Math.floor(Math.random() * this.vikingArmy.length)];
+  armyAttack(armyAttacking, armyAttacked) {
+    const soldierAttacking =
+      this.armyAttacking[Math.floor(Math.random() * this.armyAttacking.length)];
 
-    if (armyAttacking === vikingArmy) {
-      let result = randomSaxon.receiveDamage(randomViking.strength);
-      this.saxonArmy = this.saxonArmy.filter((saxon) => saxon.health > 0);
-      return result;
-    }
+    const soldierAttacked =
+      this.armyAttacked[Math.floor(Math.random() * this.armyAttacked.length)];
 
-    if (armyAttacking === saxonArmy) {
-      let result = randomViking.receiveDamage(randomSaxon.strength);
-      this.vikingArmy = this.vikingArmy.filter((viking) => viking.health > 0);
-      return result;
-    }
+    let result = soldierAttacked.receiveDamage(soldierAttacking.strength);
+
+    this.armyAttacked = this.armyAttacked.filter(
+      (soldier) => soldier.health > 0
+    );
+
+    return result;
   }
 
   showStatus() {
