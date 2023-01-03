@@ -1,51 +1,14 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
-
-# LAB | JS Vikings
+# LAB | JavaScript: Vikings (exercises with objects)
 
 ![giphy](https://user-images.githubusercontent.com/76580/167318130-3f0e5e19-86bc-4278-aaab-a988febcea3f.gif)
 
-## Introduction
 
-We have learned Object-oriented programming and how `class` and inheritance work in JavaScript. Now let's work with our Viking friends, applying all of the concepts we have just learned.
-
-<br>
-
-## Requirements
-
-- Fork this repo.
-- Clone this repo.
-
-<br>
-
-## Submission
-
-- Upon completion, run the following commands:
-
-```bash
-$ git add .
-$ git commit -m "Solved lab"
-$ git push origin master
-```
-
-- Create a Pull Request so that your TAs can check your work.
-
-<br>
-
-
-
-## Test Your Code
+## Tests
 
 This LAB is equipped with unit tests to provide automated feedback on your lab progress. In case you want to check the tests, they are in the `tests/viking.spec.js` file.
 
 
-
 To run the tests and your JavaScript code, open the `SpecRunner.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension.
-
-
-
-To see the outputs of the `console.log` in your JavaScript code, open the [Console in the Developer Tools](https://developer.chrome.com/docs/devtools/open/#console).
-
-<br>
 
 
 
@@ -283,6 +246,3 @@ Returns the current status of the `War` based on the size of the armies.
 
 - **if there are at least 1 `Viking` and 1 `Saxon`**, should return **_"Vikings and Saxons are still in the thick of battle."_**
 
-  
-
-**Happy Coding!** 💙
